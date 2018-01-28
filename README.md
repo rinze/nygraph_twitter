@@ -1,5 +1,3 @@
-First file!
-
 This code replicates [the plots used in this analysis by The New York 
 Times](https://www.nytimes.com/interactive/2018/01/27/technology/social-media-bots.html) 
 using Python and R.
