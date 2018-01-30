@@ -39,9 +39,12 @@ def get_follower_info(user_id_list):
                            for i in range(0, len(user_id_list), csize)]
 
     for chunk in user_id_list_chunks:
-        partial = api.UsersLookup(chunk)
-        partial = [[user.id, copy.copy(user.created_at), user.statuses_count] for user in partial]
-        res += partial
+        try:
+            partial = api.UsersLookup(chunk)
+            partial = [[user.id, copy.copy(user.created_at), user.statuses_count] for user in partial]
+            res += partial
+        except:
+            print "\t * Partial user data download failed. Skipping 100 user_ids"
 
     return(res)
 
