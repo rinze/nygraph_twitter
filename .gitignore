@@ -1,4 +1,6 @@
 config.py
 *.pyc
 *.pickle
-*.cvs.gz
+*.csv.gz
+*.png
+.Rhistory
