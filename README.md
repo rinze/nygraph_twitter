@@ -9,4 +9,6 @@ Just edit `config-sample.py` with the development credentials obtained for your
 account and rename it to `config.py`. Then:
 
 1. Run `python get_data.py account_name` to get data for that account.
-2. Edit the R code to make the plot for that account name and run it.
+2. Run `Rscript plot_data.R account_name` to save a JPG file with the desired 
+   plot. Alternatively, you can start R in interactive mode and call the 
+   `save_username_plot` function to obtain a ggplot2 object.
