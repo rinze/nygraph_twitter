@@ -6,9 +6,11 @@ using Python and R.
 post](https://rinzewind.org/blog-en/2018/replicating-the-new-york-times-bot-twitter-analysis-with-r-and-python.html).
 
 Just edit `config-sample.py` with the development credentials obtained for your 
-account and rename it to `config.py`. Then:
-
-1. Run `python get_data.py account_name` to get data for that account.
-2. Run `Rscript plot_data.R account_name` to save a JPG file with the desired 
+account and rename it to `config.py`.
+Use python 2.7
+Then:
+1. Install python-twitter if needed, `pip install python-twitter`
+2. Run `python get_data.py account_name` to get data for that account.
+3. Run `Rscript plot_data.R account_name` to save a JPG file with the desired 
    plot. Alternatively, you can start R in interactive mode and call the 
    `save_username_plot` function to obtain a ggplot2 object.
